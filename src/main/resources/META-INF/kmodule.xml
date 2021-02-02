@@ -2,7 +2,7 @@
 <kmodule
   xmlns="http://www.drools.org/xsd/kmodule">
 
-  <kbase packages="com.yoogesh.rule">
+  <kbase packages="com.yoogesh.rules">
     <ksession name="StatelessPassportValidation" type="stateless"/>
   </kbase>
   

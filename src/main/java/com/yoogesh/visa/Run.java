@@ -19,6 +19,8 @@ public class Run {
 	    StatelessKieSession kieSession = kieContainer.newStatelessKieSession("StatelessPassportValidation");
 	    System.out.println("==== DROOLS SESSION START ==== ");
 	    kieSession.execute(passports);
+	    
+	    //passports.forEach(password -> System.out.println(String.format("password %s Validation Result: %s", password, password.getValidation())));
 	    System.out.println("==== DROOLS SESSION END ==== ");
 		
 	}

@@ -14,32 +14,32 @@ public class ApplicationRepository {
     List<Passport> passports = new ArrayList<>();
 
     passports.add(Passport.newBuilder()
-      .withPassportNumber("CA-SARAH-1")
-      .withName("Sarah Murphy")
+      .withPassportNumber("CA-YOOGESH-1")
+      .withName("Yoogesh Sharma")
       .withUnusedVisaPages(1)
       .withExpiresOn(LocalDate.of(2017, Month.DECEMBER, 17))
       .withAge(50)
       .build());
 
     passports.add(Passport.newBuilder()
-      .withPassportNumber("CA-SIMON-2")
-      .withName("Simon Murphy")
+      .withPassportNumber("CA-SUSHILA-2")
+      .withName("Sushila Sapkota")
       .withUnusedVisaPages(0)
       .withExpiresOn(LocalDate.of(2045, Month.MAY, 11))
       .withAge(12)
       .build());
 
     passports.add(Passport.newBuilder()
-      .withPassportNumber("AU-EMILY-3")
-      .withName("Emily Brown")
+      .withPassportNumber("AU-KRISTY-3")
+      .withName("Kristy Sharma")
       .withUnusedVisaPages(20)
       .withExpiresOn(LocalDate.of(2047, Month.NOVEMBER, 25))
       .withAge(16)
       .build());
 
     passports.add(Passport.newBuilder()
-      .withPassportNumber("AU-JAMES-4")
-      .withName("James Brown")
+      .withPassportNumber("AU-KRISHA-4")
+      .withName("Krisha Sharma")
       .withUnusedVisaPages(10)
       .withExpiresOn(LocalDate.of(2045, Month.APRIL, 10))
       .withAge(17)
