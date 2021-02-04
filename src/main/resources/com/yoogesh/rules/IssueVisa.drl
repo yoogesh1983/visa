@@ -1,0 +1,18 @@
+package com.yoogesh.rules
+
+import com.yoogesh.visa.validation.Validation;
+import com.yoogesh.visa.model.VisaApplication;
+import com.yoogesh.visa.model.Visa;
+
+import java.time.LocalDate
+
+rule "Issue visa for valid applications"
+	dialect "mvel"
+	agenda-group "issue-visa"
+	when
+	  $visaApplication: VisaApplication( validation == Validation.PASSED )
+	then
+	  Visa visa = new Visa( $visaApplication.getPassportNumber() );
+	  System.out.println("Issue " + visa);
+	  insert( visa )
+end

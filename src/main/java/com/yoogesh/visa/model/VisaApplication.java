@@ -13,6 +13,8 @@ package com.yoogesh.visa.model;
 import java.time.LocalDate;
 import java.util.Objects;
 
+import com.yoogesh.visa.validation.Validation;
+
 public class VisaApplication {
   private int applicationId;
   private String passportNumber;
