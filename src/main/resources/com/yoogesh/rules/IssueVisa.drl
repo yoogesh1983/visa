@@ -8,11 +8,10 @@ import java.time.LocalDate
 
 rule "Issue visa for valid applications"
 	dialect "mvel"
-	agenda-group "issue-visa"
 	when
-	  $visaApplication: VisaApplication( validation == Validation.PASSED )
+	  $visaApplication: VisaApplication( this.validation == Validation.PASSED )
 	then
 	  Visa visa = new Visa( $visaApplication.getPassportNumber() );
 	  System.out.println("Issue " + visa);
-	  insert( visa )
+	  insertLogical( visa )
 end
